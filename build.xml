@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2003-2008 iC Consult GmbH.
+All rights reserved.
+
+$Revision$ $Date$ $Author$
+-->
+
+<project name="ptrl"  default="build"  basedir=".">
+
+  <property file="../ant.properties"/>
+
+  <property name="root.dir"     value="."/>
+  <property name="bin.dir"      value="../bin"/>
+  <property name="src.dir"      value="${root.dir}/src"/>
+  <property name="classes.dir"  value="${root.dir}/classes"/>
+  <property name="jar"          value="${bin.dir}/${ant.project.name}.jar"/>
+
+
+  <target name="compile">
+    <delete dir="${classes.dir}"/>
+    <mkdir  dir="${classes.dir}"/>
+    <javac srcdir="${src.dir}" destdir="${classes.dir}" debug="on"
+      optimize="off" deprecation="on" target="1.5" source="1.5" verbose="false">
+      <classpath>
+        <path refid="project.class.path"/>
+      </classpath>
+    </javac>
+<!--     <copy todir="${classes.dir}">
+      <fileset dir="${src.dir}">
+        <include name="**/*.properties"/>
+        <include name="**/*.ldif"/>
+        <include name="**/*.template"/>
+        <include name="**/*.mail"/>
+      </fileset>
+    </copy>
+ -->  
+  </target>
+
+  <target name="build" depends="compile">
+    <delete file="${jar}"/>
+    <delete file="${bin.dir}/MANIFEST.MF"/>
+    <filter token="version" value="${build.version.major}" />
+    <copy file="${meta.dir}/MANIFEST.MF" tofile="${bin.dir}/MANIFEST.MF" filtering="true"/>
+    <jar jarfile="${jar}" manifest="${bin.dir}/MANIFEST.MF">
+      <fileset dir="${classes.dir}">
+        <include name="**/**"/>
+      </fileset>
+    </jar>
+    <delete file="${bin.dir}/MANIFEST.MF"/>
+  </target>
+
+  <target name="javadoc">
+     <echo>ToDo: Create Javadocs</echo>
+  </target>
+
+  <target name="unittests">
+     <echo>ToDo: Create Unittests</echo>
+  </target>
+
+</project>

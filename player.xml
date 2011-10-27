@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE item>
+<player>
+		<ranged_attack_type name='mental punch'>
+		   <damage_type>mental</damage_type>
+		   <d_attrib_part>10</d_attrib_part>
+		   <d_rand_part>10</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0.5</d_factor>
+		   <range>20</range>
+		   <attribute>EXS</attribute>
+		   <skill>Combat Psionics</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>15.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <projectiles>1</projectiles>
+		   <spreading>5</spreading>
+		   <minskill>5</minskill>
+		   <tile_effect>stop</tile_effect>
+		</ranged_attack_type>
+		<ranged_attack_type name='mental swarm'>
+		   <damage_type>mental</damage_type>
+		   <d_attrib_part>5</d_attrib_part>
+		   <d_rand_part>5</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0.5</d_factor>
+		   <range>50</range>
+		   <attribute>EXS</attribute>
+		   <skill>Combat Psionics</skill>
+		   <time>1</time>
+		   <number>4</number>
+		   <tohit>15.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <projectiles>2</projectiles>
+		   <spreading>20</spreading>
+		   <minskill>10</minskill>
+		   <tile_effect>stop</tile_effect>
+		</ranged_attack_type>
+		<ranged_attack_type name='mental wave'>
+		   <damage_type>mental</damage_type>
+		   <d_attrib_part>5</d_attrib_part>
+		   <d_rand_part>5</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0.5</d_factor>
+		   <range>50</range>
+		   <attribute>EXS</attribute>
+		   <skill>Combat Psionics</skill>
+		   <time>1</time>
+		   <number>3</number>
+		   <tohit>15.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <projectiles>50</projectiles>
+		   <spreading>360</spreading>
+		   <minskill>20</minskill>
+		   <tile_effect>ignore</tile_effect>
+		</ranged_attack_type>
+</player>

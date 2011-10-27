@@ -1,0 +1,288 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE item>
+<items>
+	<weapon name="knife">
+		<manyname>heap of knives</manyname>
+		<weight>0.2</weight>
+		<price>100</price>
+		<level>1.0</level>
+		<symbol>(</symbol>
+		<color>lgray</color>
+		<type>Melee weapons</type>
+		<melee_attack_type name='thrust'>
+		   <damage_type>normal</damage_type>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>10</d_rand_part>
+		   <d_fix_part>6</d_fix_part>
+		   <attribute>STR</attribute>
+		   <skill>melee weapons</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>1.0</tohit>
+		</melee_attack_type>
+	</weapon>
+	
+	<weapon name="katana">
+		<manyname>heap of katanas</manyname>
+		<weight>1.5</weight>
+		<price>1000</price>
+		<level>3.0</level>
+		<symbol>(</symbol>
+		<color>white</color>
+		<type>Melee weapons</type>
+		<melee_attack_type name='thrust'>
+		   <damage_type>normal</damage_type>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>10</d_rand_part>
+		   <d_fix_part>10</d_fix_part>
+		   <attribute>STR</attribute>
+		   <skill>melee weapons</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>1.0</tohit>
+		</melee_attack_type>
+		<melee_attack_type name='slash'>
+		   <damage_type>normal</damage_type>
+		   <d_attrib_part>2</d_attrib_part>
+		   <d_rand_part>10</d_rand_part>
+		   <d_fix_part>20</d_fix_part>
+		   <attribute>STR</attribute>
+		   <skill>melee weapons</skill>
+		   <time>2</time>
+		   <number>1</number>
+		   <tohit>3.0</tohit>
+		</melee_attack_type>
+	</weapon>
+	
+	<rangedweapon name="9mm pistol">
+		<manyname>heap of 9mm pistols</manyname>
+		<weight>0.4</weight>
+		<price>300</price>
+		<level>2.0</level>
+		<symbol>(</symbol>
+		<color>lgray</color>
+		<type>Small firearms</type>
+		<ranged_attack_type name='shot'>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>0</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0</d_factor>
+		   <range>30</range>
+		   <attribute>DEX</attribute>
+		   <skill>Pistols</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>15.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <spreading>5</spreading>
+		   <minskill>0</minskill>
+		   <caliber>9mm</caliber>
+		   <ammo_per_shot>1</ammo_per_shot>
+		</ranged_attack_type>
+		<ammo type="9mm">15</ammo>
+	</rangedweapon>
+
+	<rangedweapon name="shotgun">
+		<manyname>heap of shotguns</manyname>
+		<weight>2</weight>
+		<price>600</price>
+		<level>2.0</level>
+		<symbol>(</symbol>
+		<color>lgray</color>
+		<type>Medium firearms</type>
+		<ranged_attack_type name='shot'>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>0</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0</d_factor>
+		   <range>30</range>
+		   <attribute>DEX</attribute>
+		   <skill>Rifles</skill>
+		   <time>2</time>
+		   <number>1</number>
+		   <tohit>15.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <spreading>5</spreading>
+		   <minskill>0</minskill>
+		   <caliber>12g</caliber>
+		   <ammo_per_shot>1</ammo_per_shot>
+		</ranged_attack_type>
+		<ammo type="12g">8</ammo>
+	</rangedweapon>
+	
+
+	<rangedweapon name="flamethrower">
+		<manyname>heap of flamethrowers</manyname>
+		<weight>5.6</weight>
+		<price>1200</price>
+		<level>4.0</level>
+		<symbol>(</symbol>
+		<color>dred</color>
+		<type>Big firearms</type>
+		<ranged_attack_type name='BURN!'>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>10</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0.3</d_factor>
+		   <delay>1</delay>
+		   <range>10</range>
+		   <attribute>DEX</attribute>
+		   <skill>Heavy weapons</skill>
+		   <time>3</time>
+		   <number>10</number>
+		   <tohit>30.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <spreading>10</spreading>
+		   <minskill>0</minskill>
+		   <caliber>fuel</caliber>
+		   <ammo_per_shot>1</ammo_per_shot>
+		   <projectiles>1</projectiles>
+		</ranged_attack_type>
+		<ranged_attack_type name='flare'>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>5</d_rand_part>
+		   <d_fix_part>5</d_fix_part>
+		   <d_factor>0.3</d_factor>
+		   <delay>1</delay>
+		   <range>20</range>
+		   <attribute>DEX</attribute>
+		   <skill>Heavy weapons</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>30.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <spreading>5</spreading>
+		   <minskill>0</minskill>
+		   <caliber>fuel</caliber>
+		   <ammo_per_shot>2</ammo_per_shot>
+		   <projectiles>2</projectiles>
+		</ranged_attack_type>
+		<ammo type="fuel">50</ammo>
+	</rangedweapon>
+
+	<rangedweapon name="9mm SMG">
+		<manyname>heap of 9mm SMG's</manyname>
+		<weight>2</weight>
+		<price>300</price>
+		<level>2.0</level>
+		<symbol>(</symbol>
+		<color>lgray</color>
+		<type>Medium firearms</type>
+		<ranged_attack_type name='shot'>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>0</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0</d_factor>
+		   <range>30</range>
+		   <attribute>DEX</attribute>
+		   <skill>Smg's</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>15.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <spreading>3</spreading>
+		   <minskill>0</minskill>
+		   <caliber>9mm</caliber>
+		   <ammo_per_shot>1</ammo_per_shot>
+		</ranged_attack_type>
+		<ranged_attack_type name='short burst'>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>0</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0</d_factor>
+		   <range>30</range>
+		   <attribute>DEX</attribute>
+		   <skill>Smg's</skill>
+		   <time>2</time>
+		   <number>3</number>
+		   <tohit>15.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <spreading>7</spreading>
+		   <minskill>0</minskill>
+		   <caliber>9mm</caliber>
+		   <ammo_per_shot>1</ammo_per_shot>
+		</ranged_attack_type>
+		<ranged_attack_type name='long burst'>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>0</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0</d_factor>
+		   <range>30</range>
+		   <attribute>DEX</attribute>
+		   <skill>Smg's</skill>
+		   <time>3</time>
+		   <number>10</number>
+		   <tohit>15.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <spreading>12</spreading>
+		   <minskill>0</minskill>
+		   <caliber>9mm</caliber>
+		   <ammo_per_shot>1</ammo_per_shot>
+		</ranged_attack_type>		
+		<ammo type="9mm">30</ammo>
+	</rangedweapon>
+
+	<rangedweapon name="AK 112">
+		<manyname>heap of AK's 112</manyname>
+		<weight>3</weight>
+		<price>1600</price>
+		<level>2.0</level>
+		<symbol>(</symbol>
+		<color>lgray</color>
+		<type>Medium firearms</type>
+		<ranged_attack_type name='shot'>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>5</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0</d_factor>
+		   <range>50</range>
+		   <attribute>DEX</attribute>
+		   <skill>Rifles</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>20.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <spreading>2</spreading>
+		   <minskill>0</minskill>
+		   <caliber>7,62</caliber>
+		   <ammo_per_shot>1</ammo_per_shot>
+		</ranged_attack_type>
+		<ranged_attack_type name='short burst'>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>5</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0</d_factor>
+		   <range>50</range>
+		   <attribute>DEX</attribute>
+		   <skill>Rifles</skill>
+		   <time>2</time>
+		   <number>3</number>
+		   <tohit>20.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <spreading>4</spreading>
+		   <minskill>0</minskill>
+		   <caliber>7,62</caliber>
+		   <ammo_per_shot>1</ammo_per_shot>
+		</ranged_attack_type>
+		<ranged_attack_type name='long burst'>
+		   <d_attrib_part>0</d_attrib_part>
+		   <d_rand_part>5</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0</d_factor>
+		   <range>30</range>
+		   <attribute>DEX</attribute>
+		   <skill>Rifles</skill>
+		   <time>3</time>
+		   <number>10</number>
+		   <tohit>20.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <spreading>12</spreading>
+		   <minskill>0</minskill>
+		   <caliber>7,62</caliber>
+		   <ammo_per_shot>1</ammo_per_shot>
+		</ranged_attack_type>		
+		<ammo type="7,62">45</ammo>
+	</rangedweapon>
+
+</items>

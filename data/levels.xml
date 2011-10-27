@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE item>
+<levels>
+	<level number="0" name="Gates" generator="City" damage="0.0">
+		<shop level="1" type="all" pricemodifier="1" chance="1.0" width="3" height="4"/ >
+		<fraction name="citizen">
+			<relation to="player" value="2"/> 
+			<creature type="human" part="0.008"/>
+			<creature type="dog" part="0.001"/>
+		</fraction>
+	</level>
+	<level number="1" name="Entrance" generator="City" Damage="0.3">
+		<arsenal chance="1.0" level="1" type="all" width="2" height="3"/>		
+		<fraction name="monsters">
+			<creature type="zombie" part="0.002"/>
+			<creature type="rat" part="0.004"/>
+		</fraction>
+	</level>
+</levels>

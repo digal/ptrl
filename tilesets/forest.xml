@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE tiles>
+<tileset name="forest" inherits="default">
+	<piece role="obstacle" inherit="no">
+		<tile chance="1.0" name="tree" filename="Tiles.xml"/>
+		<tile chance="0.3" name="bush1" filename="Tiles.xml"/>
+		<tile chance="0.6" name="bush2" filename="Tiles.xml"/>
+	</piece>
+</tileset>

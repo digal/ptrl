@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE tiles>
+<tileset name="default" inherits="">
+	<piece role="default_tile" inherit="yes">
+		<tile name="ground" filename="Tiles.xml"/>
+	</piece>
+
+	<piece role="ground">
+		<tile name="ground" filename="Tiles.xml"/>
+	</piece>
+
+	<piece role="floor_a">
+		<tile name="stone floor" filename="Tiles.xml"/>
+	</piece>
+
+	<piece role="floor_b">
+		<tile name="concrete surface" filename="Tiles.xml"/>
+	</piece>
+
+	<piece role="big_road">
+		<tile name="asphalt" filename="Tiles.xml"/>
+	</piece>
+
+	<piece role="small_road">
+		<tile name="asphalt" filename="Tiles.xml"/>
+	</piece>
+	
+	<piece role="obstacle">
+	</piece>
+
+	<piece role="furniture">
+	</piece>
+
+	<piece role="inner_door">
+		<door name="wooden door" filename="Tiles.xml"/>
+	</piece>
+
+	<piece role="outer_door">
+		<door name="wooden door" filename="Tiles.xml"/>
+	</piece>
+
+	<piece role="inner_wall">
+		<tile name="wooden wall" filename="Tiles.xml"/>
+	</piece>
+
+	<piece role="outer_wall">
+		<tile name="stone wall" filename="Tiles.xml"/>
+	</piece>
+
+	<piece role="barricade">
+	<tile name="wooden fence" filename="Tiles.xml"/>
+	</piece>
+</tileset>

@@ -1,0 +1,246 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE tiles>
+<tiles>
+	<tile name="ground">
+		<type>floor</type>
+		<symbol>.</symbol>
+		<color>brown</color>
+		<maxdamage>0</maxdamage>	
+		<timemult>16</timemult>
+		<swim>false</swim>
+		<height>0</height>
+	</tile>
+
+	<tile name="concrete surface">
+		<type>floor</type>
+		<symbol>.</symbol>
+		<color>lgray</color>
+		<maxdamage>0</maxdamage>	
+		<timemult>16</timemult>
+		<swim>false</swim>
+		<height>0</height>
+	</tile>
+
+	<tile name="asphalt">
+		<type>ground</type>
+		<symbol>:</symbol>
+		<color>lgray</color>
+		<maxdamage>0</maxdamage>	
+		<timemult>10</timemult>
+		<swim>false</swim>
+		<height>0</height>
+	</tile>
+
+	<tile name="stone floor">
+		<type>ground</type>
+		<symbol>.</symbol>
+		<color>lgray</color>
+		<maxdamage>0</maxdamage>	
+		<timemult>10</timemult>
+		<swim>false</swim>
+		<height>0</height>
+	</tile>
+
+
+	<tile name="stone wall">
+		<type>wall</type>
+		<symbol>#</symbol>
+		<color>lgray</color>
+		<maxdamage>100</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>10</height>
+		<wreck name="rock" file="Items.xml" qty="3" />
+	</tile>
+	
+	<tile name="wooden wall">
+		<type>wall</type>
+		<symbol>#</symbol>
+		<color>brown</color>
+		<maxdamage>150</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>10</height>
+	</tile>
+
+	<tile name="vault outer wall">
+		<type>wall</type>
+		<symbol>#</symbol>
+		<color>dgray</color>
+		<maxdamage>0</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>10</height>
+	</tile>
+
+	<tile name="vault inner wall">
+		<type>wall</type>
+		<symbol>#</symbol>
+		<color>dcyan</color>
+		<maxdamage>350</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>10</height>
+		<wreck name="piece of aluminium" file="Items.xml" qty="3" />
+	</tile>
+
+	<tile name="simple window">
+		<type>window</type>
+		<symbol>^</symbol>
+		<color>brown</color>
+		<maxdamage>150</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>5</height>
+	</tile>
+
+	<tile name="tree">
+		<type>tree</type>
+		<symbol>&#9827;</symbol>
+		<color>DGREEN</color>
+		<maxdamage>15</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>7</height>
+	</tile>
+
+
+	<tile name="bush1">
+		<type>bush</type>
+		<symbol>"</symbol>
+		<color>LGREEN</color>
+		<maxdamage>350</maxdamage>	
+		<timemult>35</timemult>
+		<swim>false</swim>
+		<height>8</height>
+	</tile>
+
+	<tile name="bush2">
+		<type>bush</type>
+		<symbol>"</symbol>
+		<color>DGREEN</color>
+		<maxdamage>350</maxdamage>	
+		<timemult>45</timemult>
+		<swim>false</swim>
+		<height>6</height>
+	</tile>
+
+	<tile name="force field">
+		<type>wall</type>
+		<symbol>#</symbol>
+		<color>LCYAN</color>
+		<maxdamage>350</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>0</height>
+	</tile>
+
+	<door name="wooden door">
+		<type>door</type>
+		<symbol>+</symbol>
+		<opensymbol>/</opensymbol>
+		<color>brown</color>
+		<maxdamage>350</maxdamage>	
+		<timemult>0</timemult>
+		<opentimemult>10</opentimemult>
+		<swim>false</swim>
+		<height>10</height>
+		<openheight>0</openheight>
+	</door>
+
+	<tile name="wooden fence">
+		<type>fence</type>
+		<symbol>#</symbol>
+		<color>brown</color>
+		<maxdamage>100</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>10</height>
+	</tile>
+	
+
+	<door name="vault inner door">
+		<type>door</type>
+		<symbol>+</symbol>
+		<opensymbol>/</opensymbol>
+		<color>lcyan</color>
+		<maxdamage>350</maxdamage>	
+		<timemult>0</timemult>
+		<opentimemult>10</opentimemult>
+		<swim>false</swim>
+		<height>10</height>
+		<openheight>0</openheight>
+	</door>
+
+	<tile name="wooden table">
+		<type>furniture</type>
+		<symbol>&#9830;</symbol>
+		<color>BROWN</color>
+		<maxdamage>50</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>3</height>
+	</tile>
+
+	<tile name="wooden chair">
+		<type>furniture</type>
+		<symbol>~</symbol>
+		<color>BROWN</color>
+		<maxdamage>15</maxdamage>	
+		<timemult>15</timemult>
+		<swim>false</swim>
+		<height>1</height>
+	</tile>
+
+	<tile name="matress">
+		<type>furniture</type>
+		<symbol>~</symbol>
+		<color>WHITE</color>
+		<maxdamage>10</maxdamage>	
+		<timemult>12</timemult>
+		<swim>false</swim>
+		<height>0</height>
+	</tile>
+	
+	<tile name="workbench">
+		<type>furniture</type>
+		<symbol>&#9830;</symbol>
+		<color>LGRAY</color>
+		<maxdamage>50</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>3</height>
+	</tile>
+	
+	<tile name="trash can">
+		<type>obstacle</type>
+		<symbol>0</symbol>
+		<color>LGRAY</color>
+		<maxdamage>20</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>2</height>
+	</tile>
+
+	<tile name="car wreckage">
+		<type>obstacle</type>
+		<symbol>^</symbol>
+		<color>LGRAY</color>
+		<maxdamage>100</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>7</height>
+	</tile>	
+	
+	<tile name="strange derbis">
+		<type>obstacle</type>
+		<symbol>^</symbol>
+		<color>DGRAY</color>
+		<maxdamage>800</maxdamage>	
+		<timemult>0</timemult>
+		<swim>false</swim>
+		<height>5</height>
+	</tile>	
+	
+</tiles>

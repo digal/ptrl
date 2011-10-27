@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE item>
+<items>
+	<item name="piece of gold">
+		<manyname>heap of gold</manyname>
+		<weight>2</weight>
+		<price>100</price>
+		<level>1.0</level>
+		<symbol>*</symbol>
+		<color>lyellow</color>
+		<type>Materials</type>
+	</item>
+
+	<item name="rock">
+		<manyname>heap of rocks</manyname>
+		<weight>1</weight>
+		<price>0</price>
+		<level>0</level>
+		<symbol>*</symbol>
+		<color>dgray</color>
+		<type>Materials</type>
+	</item>
+
+	<item name="piece of aluminium">
+		<manyname>heap of aluminium</manyname>
+		<weight>1</weight>
+		<price>10</price>
+		<level>0</level>
+		<symbol>*</symbol>
+		<color>lcyan</color>
+		<type>Materials</type>
+	</item>
+
+	<item name="baseball cap">
+		<manyname>heap of baseball caps</manyname>
+		<weight>1</weight>
+		<price>10</price>
+		<level>0</level>
+		<symbol>[</symbol>
+		<color>DRED</color>
+		<type>Head gear</type>
+	</item>
+
+</items>

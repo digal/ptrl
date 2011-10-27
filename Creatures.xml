@@ -1,0 +1,152 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE tiles>
+<creatures>
+	<creature name="rat" level="1">
+		<symbol>r</symbol>
+		<color>brown</color>
+		<str>1</str>
+		<con>1</con>
+		<dex>8</dex>
+		<per>4</per>
+		<int>1</int>
+		<cha>0</cha>
+		<exs>0</exs>
+		<hp>5</hp>
+		<skill name="unarmed combat">30</skill>
+		<skill name="dodge">0</skill>
+		<close_attack_type name='bite'>
+		   <damage_type>normal</damage_type>
+		   <d_attrib_part>2</d_attrib_part>
+		   <d_fix_part>3</d_fix_part>
+		   <attribute>STR</attribute>
+		   <skill>unarmed combat</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>1.0</tohit>
+		</close_attack_type>
+	</creature>
+	
+	<creature name="psi rat" level="1">
+		<symbol>r</symbol>
+		<color>white</color>
+		<str>1</str>
+		<con>1</con>
+		<dex>8</dex>
+		<per>4</per>
+		<int>1</int>
+		<cha>0</cha>
+		<exs>5</exs>
+		<hp>5</hp>
+		<skill name="unarmed combat">30</skill>
+		<skill name="dodge">10</skill>
+		<skill name="combat psionics">20</skill>
+		<close_attack_type name='bite'>
+		   <damage_type>normal</damage_type>
+		   <d_attrib_part>2</d_attrib_part>
+		   <d_fix_part>3</d_fix_part>
+		   <attribute>STR</attribute>
+		   <skill>unarmed combat</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>1.0</tohit>
+		</close_attack_type>
+		<ranged_attack_type name='mental swarm'>
+		   <damage_type>mental</damage_type>
+		   <d_attrib_part>1</d_attrib_part>
+		   <d_rand_part>1</d_rand_part>
+		   <d_fix_part>0</d_fix_part>
+		   <d_factor>0</d_factor>
+		   <range>10</range>
+		   <attribute>EXS</attribute>
+		   <skill>Combat Psionics</skill>
+		   <time>2</time>
+		   <number>4</number>
+		   <tohit>15.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <projectiles>2</projectiles>
+		   <spreading>20</spreading>
+		   <minskill>10</minskill>
+		</ranged_attack_type>
+	</creature>
+	
+	<creature name="zombie" level="1">
+		<symbol>z</symbol>
+		<color>dgray</color>
+		<str>6</str>
+		<con>6</con>
+		<dex>4</dex>
+		<per>8</per>
+		<int>1</int>
+		<cha>0</cha>
+		<exs>0</exs>
+		<hp>20</hp>
+		<skill name="unarmed combat">30</skill>
+		<skill name="dodge">20</skill>
+		<close_attack_type name='punch'>
+		   <damage_type>normal</damage_type>
+		   <d_attrib_part>2</d_attrib_part>
+		   <d_fix_part>5</d_fix_part>
+		   <attribute>STR</attribute>
+		   <skill>unarmed combat</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>1.0</tohit>
+		</close_attack_type>
+	</creature>
+	
+	<creature name="imp" level="1">
+		<symbol>i</symbol>
+		<color>lred</color>
+		<str>6</str>
+		<con>6</con>
+		<dex>5</dex>
+		<per>8</per>
+		<int>6</int>
+		<cha>0</cha>
+		<exs>6</exs>
+		<hp>30</hp>
+		<skill name="unarmed combat">30</skill>
+		<skill name="combat psionics">30</skill>
+		<skill name="dodge">20</skill>
+		<close_attack_type name='punch'>
+		   <damage_type>normal</damage_type>
+		   <d_attrib_part>2</d_attrib_part>
+		   <d_fix_part>5</d_fix_part>
+		   <attribute>STR</attribute>
+		   <skill>unarmed combat</skill>
+		   <time>1</time>
+		   <number>1</number>
+		   <tohit>1.0</tohit>
+		</close_attack_type>
+		<ranged_attack_type name='fireball'>
+		   <damage_type>thermal</damage_type>
+		   <d_attrib_part>2</d_attrib_part>
+		   <d_rand_part>0</d_rand_part>
+		   <d_fix_part>5</d_fix_part>
+		   <d_factor>0</d_factor>
+		   <range>20</range>
+		   <attribute>EXS</attribute>
+		   <skill>Combat Psionics</skill>
+		   <time>2</time>
+		   <number>1</number>
+		   <tohit>15.0</tohit>
+		   <tohit_factor>0</tohit_factor>
+		   <projectiles>1</projectiles>
+		   <spreading>10</spreading>
+		   <minskill>10</minskill>
+		</ranged_attack_type>
+	</creature>
+	
+	<creature name="dummy" level="1">
+		<symbol>&amp;</symbol>
+		<color>DBLUE</color>
+		<str>10</str>
+		<con>10</con>
+		<dex>10</dex>
+		<per>10</per>
+		<int>0</int>
+		<cha>0</cha>
+		<exs>10</exs>
+	</creature>
+</creatures>

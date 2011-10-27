@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE tiles>
+<tileset name="town" inherits="default">
+	<piece role="obstacle" inherit="no">
+		<tile chance="0.5" name="trash can" filename="Tiles.xml"/>
+		<tile chance="0.1" name="car wreckage" filename="Tiles.xml"/>
+		<tile chance="0.1" name="strange derbis" filename="Tiles.xml"/>
+	</piece>
+</tileset>

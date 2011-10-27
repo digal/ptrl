@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE ptrl_config>
+<config>
+	<messages>100</messages>
+	<mapwidth>200</mapwidth>
+	<mapheight>100</mapheight>
+	<maptype>ruins</maptype>
+	<fullscreen>no</fullscreen>
+	<font>Courier New</font>
+	<fontsize>12</fontsize>
+	<fontstyle>bold</fontstyle>
+	<delay>20</delay>
+	<gm_balance>0.5</gm_balance>
+	<gm_side>100</gm_side>
+</config>

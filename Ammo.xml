@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE item>
+<items>
+	<ammo name="9mm FMJ">
+		<manyname>9mm FMJ's</manyname>
+		<damage_type>normal</damage_type>
+		<d_rand_part>10</d_rand_part>
+		<d_fix_part>5</d_fix_part>
+		<weight>0.01</weight>
+		<price>1</price>
+		<level>1.0</level>
+		<symbol>|</symbol>
+		<color>lgray</color>
+		<type>Ammo</type>
+		<caliber>9mm</caliber>
+		<projectiles>1</projectiles>
+		<spreading>0</spreading>
+	</ammo>
+
+	<ammo name="7,62mm FMJ">
+		<manyname>7,62mm FMJ's</manyname>
+		<damage_type>normal</damage_type>
+		<d_rand_part>10</d_rand_part>
+		<d_fix_part>10</d_fix_part>
+		<weight>0.01</weight>
+		<price>1</price>
+		<level>1.0</level>
+		<symbol>|</symbol>
+		<color>lgray</color>
+		<type>Ammo</type>
+		<caliber>7,62</caliber>
+		<projectiles>1</projectiles>
+		<spreading>0</spreading>
+	</ammo>
+	
+	<ammo name="7,62mm AP">
+		<manyname>7,62mm AP's</manyname>
+		<damage_type>ap</damage_type>
+		<d_rand_part>0</d_rand_part>
+		<d_fix_part>10</d_fix_part>
+		<weight>0.01</weight>
+		<price>1</price>
+		<level>1.0</level>
+		<symbol>|</symbol>
+		<color>white</color>
+		<type>Ammo</type>
+		<caliber>7,62</caliber>
+		<projectiles>1</projectiles>
+		<spreading>0</spreading>
+	</ammo>
+
+	
+	<ammo name="fuel mk1">
+		<manyname>fuel mk1</manyname>
+		<damage_type>thermal</damage_type>
+		<weight>0.1</weight>
+		<price>10</price>
+		<level>2.0</level>
+		<symbol>|</symbol>
+		<color>dred</color>
+		<type>Ammo</type>
+		<caliber>fuel</caliber>
+		<projectiles>1</projectiles>
+		<spreading>0</spreading>
+	</ammo>
+
+	<ammo name="toxic fuel">
+		<manyname>toxic fuel</manyname>
+		<damage_type>toxic</damage_type>
+		<weight>0.1</weight>
+		<d_rand_part>5</d_rand_part>
+		<price>10</price>
+		<level>2.0</level>
+		<symbol>|</symbol>
+		<color>lgreen</color>
+		<type>Ammo</type>
+		<caliber>fuel</caliber>
+		<projectiles>1</projectiles>
+		<spreading>5</spreading>
+	</ammo>
+
+	<ammo name="12g pellet shell">
+		<manyname>12g pellet shells</manyname>
+		<damage_type>normal</damage_type>
+		<d_rand_part>3</d_rand_part>
+		<d_fix_part>1</d_fix_part>
+		<weight>0.1</weight>
+		<price>10</price>
+		<level>2.0</level>
+		<symbol>|</symbol>
+		<color>lgray</color>
+		<type>Ammo</type>
+		<caliber>12g</caliber>
+		<projectiles>8</projectiles>
+		<spreading>10</spreading>
+	</ammo>
+
+	<ammo name="12g slug shell">
+		<manyname>12g slug shells</manyname>
+		<damage_type>normal</damage_type>
+		<d_rand_part>5</d_rand_part>
+		<d_fix_part>15</d_fix_part>
+		<weight>0.1</weight>
+		<price>10</price>
+		<level>2.0</level>
+		<symbol>|</symbol>
+		<color>lgray</color>
+		<type>Ammo</type>
+		<caliber>12g</caliber>
+		<projectiles>1</projectiles>
+		<spreading>2</spreading>
+	</ammo>
+</items>
