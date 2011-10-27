@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Created-By: Yuri Buyanov
+Main-Class: ptrl.ui.ConsoleFrame
+
+Name: ptrl
+Implementation-Title: Plutonium Roguelike
+Implementation-Version: 0.1

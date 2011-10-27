@@ -21,6 +21,8 @@ import ptrl.util.MessageStack;
 import ptrl.items.*;
 import org.xml.sax.*;
 
+import ptrl.ui.Console;
+
 import javax.xml.parsers.*;
 
 /**
