@@ -7,6 +7,7 @@ import ptrl.combat.PtrlConstants;
 import ptrl.creatures.Player;
 import ptrl.map.GlobalMap;
 import ptrl.map.MapDescriptor;
+import static ptrl.ui.Controls.*;
 
 public class GlobalMapScreen implements IGameScreen
 {
@@ -94,20 +95,20 @@ public class GlobalMapScreen implements IGameScreen
 		else if(ch=='c')
 			map.citiesAndRoads();
 		
-		if (ch=='7'||ch=='8'||ch=='9')
+		if (isUp(ke))
 		{
 			xy[1]=-1;
 		}
-		else if (ch=='1'||ch=='2'||ch=='3')
+		else if (isDown(ke))
 		{
 			xy[1]=1;
 		}
 		
-		if (ch=='7'||ch=='4'||ch=='1')
+		if (isLeft(ke))
 		{
 			xy[0]=-1;
 		}
-		else if (ch=='9'||ch=='6'||ch=='3')
+		else if (isRight(ke))
 		{
 			xy[0]=1;
 		}

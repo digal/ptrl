@@ -8,9 +8,9 @@
 	<maptype>ruins</maptype>
 	<fullscreen>no</fullscreen>
 	<font>Courier New</font>
-	<fontsize>12</fontsize>
+	<fontsize>14</fontsize>
 	<fontstyle>bold</fontstyle>
-	<delay>20</delay>
+	<delay>50</delay>
 	<gm_balance>0.5</gm_balance>
 	<gm_side>100</gm_side>
 </config>

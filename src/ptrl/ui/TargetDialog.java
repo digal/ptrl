@@ -15,6 +15,8 @@ import ptrl.map.Actor;
 import ptrl.map.Map;
 import ptrl.util.Message;
 
+import static ptrl.ui.Controls.*;
+
 public class TargetDialog implements IGameScreen 
 {
 	public TargetDialog(Map m, Player p)
@@ -86,23 +88,23 @@ public class TargetDialog implements IGameScreen
 		}
 		else
 		{
-			if (ch=='7'||ch=='8'||ch=='9')
-			{
-				xy[1]=-1;
-			}
-			else if (ch=='1'||ch=='2'||ch=='3')
-			{
-				xy[1]=1;
-			}
-		
-			if (ch=='7'||ch=='4'||ch=='1')
-			{
-				xy[0]=-1;
-			}
-			else if (ch=='9'||ch=='6'||ch=='3')
-			{
-				xy[0]=1;
-			}
+      if (isUp(ke))
+      {
+        xy[1]=-1;
+      }
+      else if (isDown(ke))
+      {
+        xy[1]=1;
+      }
+
+      if (isLeft(ke))
+      {
+        xy[0]=-1;
+      }
+      else if (isRight(ke))
+      {
+        xy[0]=1;
+      }
 			if ((xy[0]!=0||xy[1]!=0)&&tx+xy[0]>=0&&tx+xy[0]<map.getWidth()&&ty+xy[1]>=0&&ty+xy[1]<map.getHeight()) 
 			{
 				tx+=xy[0];

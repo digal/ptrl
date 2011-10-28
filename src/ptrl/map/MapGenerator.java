@@ -43,6 +43,10 @@ public class MapGenerator
 			SettlementMapDescriptor sDesc = (SettlementMapDescriptor) desc;
 			generateSettlement(m);
 		}
+    arsenal(m);
+		populate(m, "zombie", 0.0005);
+//		populate(m, "imp", 0.0005);
+
 		return m;
 	}
 	
@@ -442,7 +446,7 @@ public class MapGenerator
 				}
 
 			//System.out.println("domik: x1="+x1+"; y1="+y1);
-			drawBuildingInRect(m, (float)0.0, x1, y1, x2, y2, new TileSet(), false);
+//			drawBuildingInRect(m, (float)0.0, x1, y1, x2, y2, new TileSet(), false);
 
 			
 		}

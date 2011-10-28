@@ -41,22 +41,25 @@ public class MapDescriptor implements Serializable
 	
 	public Map getMap()
 	{
+    Map map;
 		File f = new File("."+File.separator+Game.getInstance().getPlayer().getName()+File.separator+"m"+x+"_"+y+"_"+z);
 		if (f.exists()) {
 			try
 			{
 				ObjectInputStream in = new ObjectInputStream(new FileInputStream(f));
-				Map m = (Map)in.readObject();
-				return m;
-				
+				map = (Map)in.readObject();
+
 			} catch (Exception e)
 			{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				System.exit(1);
+        throw(new IllegalStateException("There's no life after death"));
 			}
-		}
-		return MapGenerator.generate(this);
+		} else {
+      map = MapGenerator.generate(this);
+    }
+    return map;
 	}
 
 	public short getBgColor()

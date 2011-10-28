@@ -200,7 +200,7 @@ public class Map implements Serializable
 
 	public int[][] getPlayerFov()
 	{
-		Actor a = (Actor)actors.get(0);
+		Actor a = (Actor)actors.get(actors.size() - 1);
 		a.calc360Fov();
 		return a.getFov();
 	}
@@ -264,13 +264,13 @@ public class Map implements Serializable
 	public Actor getPlayerActor()
 	{
 		if (actors!=null)
-			if (actors.size()>0) return (Actor)actors.get(0);
+			if (actors.size()>0) return (Actor)actors.get(actors.size()-1);
 		return null;
 	}
 	
 	public long movePlayer(int[] xy)
 	{
-		Actor a = (Actor)actors.get(0);
+		Actor a = getPlayerActor();
 		actor_shadows[a.getCreature().getX()][a.getCreature().getY()]=false;
 		if (a==null) System.exit(0);
 		long t=0;
@@ -340,7 +340,7 @@ public class Map implements Serializable
 	
 	public void refreshKnown()
 	{
-		Actor a = (Actor)actors.get(0);
+		Actor a = (Actor)actors.get(actors.size()-1);
 		if (a==null) System.exit(0);
 		int[][] fov = a.getFov();
 		int x=a.getCreature().getX();
@@ -444,10 +444,10 @@ public class Map implements Serializable
 	
 	public void setPlayerActor(Actor a)
 	{
-		if (actors.size()==0)
-			actors.add(a);
-		else 
-			actors.set(0, a);
+//		if (actors.size()==0)
+    actors.add(a);
+//		else
+//			actors.set(0, a);
 		a.setMap(this);
 		a.setTilemap(this.tilemap);
 	}

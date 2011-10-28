@@ -25,6 +25,8 @@ import ptrl.ui.Console;
 
 import javax.xml.parsers.*;
 
+import static ptrl.ui.Controls.*;
+
 /**
  * Main game class
  */
@@ -82,7 +84,7 @@ public class Game implements IGameScreen, IAnimated, Serializable
 		map.setMessageStack(mstack);
 		pc.setXY(map_x/2, map_y/2);
 		map.addActor(pc, "player", "none");
-//		Item cap=new Item("Items.xml", "'Sense PRO'™ mask");
+//		Item cap=new Item("Items.xml", "'Sense PRO'ï¿½ mask");
 //		map.addItem(cap, pc.getX()+1, pc.getY());
 		Item tags=new Item((float)0.1, "name tag: '"+pc.getName()+"'", "heap of name tags: '"+pc.getName()+"'", 0, 0, '\'', PtrlConstants.LGRAY);
 		tags.setType(Item.IS_NECK);
@@ -450,7 +452,7 @@ public class Game implements IGameScreen, IAnimated, Serializable
 				else question(new PickupQuestion(items));
 			}
 		}
-		else if (ch=='5')
+		else if (isSkip(ke))
 		{
 			map.movePlayer(new int[]{0,0});
 		}
@@ -497,23 +499,23 @@ public class Game implements IGameScreen, IAnimated, Serializable
 		else 
 		{
 			int[] xy={0,0};
-			if (ch=='7'||ch=='8'||ch=='9')
-			{
-				xy[1]=-1;
-			}
-			else if (ch=='1'||ch=='2'||ch=='3')
-			{
-				xy[1]=1;
-			}
-			
-			if (ch=='7'||ch=='4'||ch=='1')
-			{
-				xy[0]=-1;
-			}
-			else if (ch=='9'||ch=='6'||ch=='3')
-			{
-				xy[0]=1;
-			}
+      if (isUp(ke))
+      {
+        xy[1]=-1;
+      }
+      else if (isDown(ke))
+      {
+        xy[1]=1;
+      }
+
+      if (isLeft(ke))
+      {
+        xy[0]=-1;
+      }
+      else if (isRight(ke))
+      {
+        xy[0]=1;
+      }
 			if ((xy[0]!=0||xy[1]!=0)&&pc.getX()+xy[0]>=0&&pc.getX()+xy[0]<map.getWidth()&&pc.getY()+xy[1]>=0&&pc.getY()+xy[1]<map.getHeight()) 
 			{
 				Tile tl=map.getTile(pc.getX()+xy[0], pc.getY()+xy[1]);
@@ -567,7 +569,7 @@ public class Game implements IGameScreen, IAnimated, Serializable
 	
 	private void reloadMap()
 	{
-		Actor pl = map.getActor(0);
+		Actor pl = map.getPlayerActor();
 		map = gmap.getMap();
 		map.setPlayerActor(pl);
 		
