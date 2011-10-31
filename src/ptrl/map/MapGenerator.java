@@ -42,13 +42,14 @@ public class MapGenerator
 		{
 			SettlementMapDescriptor sDesc = (SettlementMapDescriptor) desc;
 			generateSettlement(m);
-		} else {
+		} else if ("mountains".equals(desc.getSurface())) {
+      caverns(m, w,h, w/2, h/2, "default");
+    } else {
       obstacleFill(m, ts, 0.1);
-
     }
     arsenal(m);
 		populate(m, "zombie", 0.0005);
-//		populate(m, "imp", 0.0005);
+		populate(m, "imp", 0.00001);
 
 		return m;
 	}
@@ -1063,7 +1064,7 @@ public class MapGenerator
 		}
 	}
 	
-	private static Map caverns(int w, int h, int startX, int startY, String tileSetName)
+	private static Map caverns(Map m, int w, int h, int startX, int startY, String tileSetName)
 	{
 		int repeats=70;
 		//TileSet ts = new TileSet(tileSetName);
@@ -1073,13 +1074,14 @@ public class MapGenerator
 		{wall = new Tile ("Tiles.xml", "stone wall");
 		} catch (Exception e){e.printStackTrace(); System.exit(0);}
 
-		Map m = new Map(w,h,wall);
+		//Map m = new Map(w,h,wall);
 //		m.setTile(startX, startY, ground);
 		boolean[][] matrix1=new boolean[w][h];
 		boolean[][] matrix2=new boolean[w][h];
 		for (int i=0; i<w; i++) 
 			for (int j=0; j<h; j++) 
 			{
+        m.setTile(i,j,wall);
 				matrix1[i][j]=true;
 				matrix2[i][j]=true;
 			}
