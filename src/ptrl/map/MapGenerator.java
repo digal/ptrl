@@ -42,7 +42,10 @@ public class MapGenerator
 		{
 			SettlementMapDescriptor sDesc = (SettlementMapDescriptor) desc;
 			generateSettlement(m);
-		}
+		} else {
+      obstacleFill(m, ts, 0.1);
+
+    }
     arsenal(m);
 		populate(m, "zombie", 0.0005);
 //		populate(m, "imp", 0.0005);
