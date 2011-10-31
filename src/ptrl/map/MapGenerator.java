@@ -435,9 +435,9 @@ public class MapGenerator
 		}
 
 		
-		int x1=2;
+		int x1=(int)(m.getWidth()/2-2);;
 		int y1=(int)(m.getHeight()/2-2);
-		int x2=(int)(5+Math.max(ammos.size(), weaps.size()));
+		int x2=(int)(m.getWidth()/2+5);
 		int y2=(int)(m.getHeight()/2+2);
 		try
 		{
