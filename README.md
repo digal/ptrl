@@ -26,7 +26,7 @@ Controls
 - `I`: inventory
 - `s`: skills
 - `m`: messages
-- `\[`/`\]`: switch close combat attack type
+- `[`/`]`: switch close combat attack type
 - `;`/`'`: switch ranged attack type (weapon fire modes, psionic attacks)
 - `R` reload weapon (let you choose ammo type)
 - `r` fast reload with last ammo type
