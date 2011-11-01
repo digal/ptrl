@@ -11,7 +11,7 @@ Manual
 
 JRE 1.5+ required
 
-- Download archive and unzip it
+- Download [archive](https://github.com/downloads/digal/ptrl/ptrl.zip) and unzip it
 - Run `java -jar ptrl.jar` from the game dir
 
 After starting a new game, naming your character, and generating stats, you will likely appear on the empty or forest map. Press `M` (`shift-m`) to go to the global map. Not all locations have interesting map generators, but you can visit a town (gray '*') to see a town map, or mountains (gray/white '^') to see a cavern map. There should be some weapons and ammo on the center side of each location, and also some zombies or even imps. There could be also few psionic attacks available, if your 'Combat Psionocs' skill is high enough.
